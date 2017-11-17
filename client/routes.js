@@ -4,13 +4,13 @@ var multer = require('multer');
 var net = require('net');
 
 var storage = multer.memoryStorage();
-
-var upload = multer({ storage : storage});
+upload = multer({ storage : storage});
 var client = new net.Socket();
 const ORIGIN_X =  240;
 const ORIGIN_Y = 370;
 
 /* GET home page. */
+/* Should test if we need to execute it every update */
 router.get('/', function(req, res, next) {
   res.sendFile(__dirname + "/index.html");
 });
