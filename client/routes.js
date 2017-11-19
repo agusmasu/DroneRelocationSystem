@@ -62,6 +62,4 @@ setTimeout(function(){
     });
 }, n * 1000);
 
-/* POST photo */
-
 module.exports = router;
